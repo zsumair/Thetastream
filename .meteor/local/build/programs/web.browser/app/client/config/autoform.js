@@ -1,0 +1,3 @@
+(function(){AutoForm.setDefaultTemplate('materialize');
+
+})();
