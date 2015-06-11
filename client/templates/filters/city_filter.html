@@ -1,0 +1,11 @@
+<template name="cityFilter">
+  <div class="input-field">
+   <select name="city" id="city" class="cityselection">
+     <option value="" disabled selected>Choose your option</option>
+      {{#each companyCities}}
+        <option>{{this}}</option>
+      {{/each}}
+   </select>
+   <label>Select City</label>
+ </div>
+</template>

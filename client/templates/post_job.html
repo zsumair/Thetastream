@@ -1,0 +1,10 @@
+<template name="postJob">
+  {{#if isJobPosted}}
+      <h2>
+          Your Job Posted Successfully. Thank You
+      </h2>
+    {{else}}
+      {{> quickForm collection="Jobs" id="insertJobs" type="insert"}}
+  {{/if}}
+
+</template>

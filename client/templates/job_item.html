@@ -1,0 +1,9 @@
+<template name="jobItem">
+   {{#linkTo route='jobDetails' class='collection-item'}}
+       <h4 class="left">{{title}}</h4>
+      <p class="center-align city"><i class="tiny mdi-maps-pin-drop maps"></i>{{city}}</p>
+      <span class="description"><strong>{{cname}}</strong> - {{ccategory}} </span>
+      <span class="new badge absolute-badge right"></span>
+      <span class="date right"> {{formatDate createdAt}} </span>
+   {{/linkTo}}
+</template>

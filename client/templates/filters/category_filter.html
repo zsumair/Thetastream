@@ -1,0 +1,15 @@
+<template name="categoryFilter">
+  <div class="input-field">
+   <select name="category" id="category" class="categoryselection">
+     <option value="" disabled selected>Choose your option</option>
+      {{#each companyCategories}}
+        <option>{{this}}</option>
+      {{/each}}
+   </select>
+   <label>Select Category</label>
+ </div>
+</template>
+
+<!-- <template name="companyCategory">
+  {{> companyCategory}}
+</template> -->

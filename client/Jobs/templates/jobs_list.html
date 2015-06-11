@@ -1,0 +1,29 @@
+<template name="jobsList">
+      <div class="col s12 filter-holder">
+            <div class="col m4 s4 filter-box">
+              {{> categoryFilter}}
+            </div>
+            <div class="col m4 s4 filter-box">
+             {{> cityFilter}}
+            </div>
+            <div class="col m4 s4 filter-box">
+              {{> jobTypeFilter}}
+            </div>
+    </div>
+
+<div class="col s12">
+  <ul class="collection" id="listings">
+    {{#each allJobs}}
+    <li>
+      {{> jobItem}}
+   </li>
+   {{/each}}
+  </ul>
+  {{#if moreResults}}
+  <button class="col s4 offset-s4 btn waves-effect waves-light load-more" id="showMoreResults" type="submit">Load More
+    <i class="mdi-content-send right"></i>
+  </button>
+  {{/if}}
+</div>
+
+</template>

@@ -1,0 +1,50 @@
+<template name="jobDetails">
+
+  <div class="col s8">
+    <div class="card-panel">
+      <h5>{{title}}</h5>
+      <span class="text">
+        {{cname}} - {{city}}
+      </span>
+      <span class="right">Posted : {{formatDate createdAt}}</span>
+    </div>
+  </div>
+  <div class="col s8 details-box">
+    <h6>About Company</h6>
+    <p>
+      {{cdesc}}
+    </p>
+    <h6>Job Description</h6>
+    <p>
+      Your primary responsibilities will be development-related; converting designs and layouts for professional web sites, web software applications, emails, and other web/mobile applications as needed, producing Responsive / Mobile HTML, CSS to implement these designs, and communicating these designs with PHP developers. You will also help with Search Engine Optimization upgrades, and custom WordPress theme development.Candidate must dream bigger than we do (and we dream big), and must live his/her life for love, character, and truth.
+    </p>
+    <h6>Job Requirements</h6>
+    <ul>
+      {{#each lines}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <h6>To Apply:</h6>
+    <p>Email resume, cover letter and links to currently active sites in your portfolio to:
+      <a href="#">{{cemail}}</a>
+    </p>
+    <div class="divider"></div>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Apply For This Job
+      <i class="mdi-content-send right"></i>
+    </button>
+  </div>
+  <aside class="col s4 right z-depth-1">
+    <hr/>
+    <a href="#">visit company website</a>
+    <hr/>
+    <a href="#">Share this listing</a>
+    <p class="flow-text small-text">
+      To Apply please forward your email to the below address
+      <a href="#">{{cemail}}</a>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Apply
+        <i class="mdi-content-send right"></i>
+      </button>
+    </p>
+  </aside>
+
+</template>

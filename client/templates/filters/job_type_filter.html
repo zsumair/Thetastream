@@ -1,0 +1,11 @@
+<template name="jobTypeFilter">
+  <div class="input-field">
+   <select name="jtype" id="jtype" class="jtypeselection">
+     <option value="" disabled selected>Choose your option</option>
+      {{#each jobTypeSelection}}
+        <option>{{this}}</option>
+      {{/each}}
+   </select>
+   <label>Select Job Type</label>
+ </div>
+</template>

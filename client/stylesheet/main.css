@@ -1,0 +1,136 @@
+body {
+      background: #f5f5f5;
+  }
+
+h4{
+    margin-bottom: 0;
+    line-height: 0;
+    font-size: 1.38rem;
+    color:#c62828; /*#51636C*/
+    width:60%;
+    text-overflow: ellipsis;
+}
+
+h5{
+  font-size: 2.84rem;
+  margin: 0.82rem 0 1.656rem 0;
+  font-weight: lighter;
+  line-height: 1em;
+}
+
+h6{
+  color:#808080;
+  font-weight: bold;
+}
+
+nav{
+  background-color: #37474f;
+}
+
+/*========================
+    Job Details Page
+========================= */
+aside{
+  background: #fff;
+}
+
+.details-box a:hover, aside a:hover{
+  border-bottom: 1px solid #37474f;
+}
+
+.details-box a,aside a{
+  color:#b71c1c;
+}
+
+/* ========================================
+        Filter holder
+=========================================*/
+
+.filter-holder{
+  background:#202f36; /*#51636C;*/
+}
+
+.filter-box label{
+  color:#fff;
+}
+
+select .selected{
+  color:#fff;
+}
+
+.filter-box .select-wrapper input.select-dropdown{
+  border-bottom: 1px solid #fff;
+  color:#fff;
+}
+
+.filter-box .dropdown-content li > a,.filter-box .dropdown-content li > span {
+  color:#777;
+}
+
+.dropdown-content{
+    z-index: 2; 
+}
+
+/* ========================================
+  Jobs Listing page / Main Layout page
+===================================== */
+
+.collection .collection-item:last-child{
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.absolute-badge{
+    position: relative !important;
+    bottom: 26px;
+    right: 0 !important;
+    padding:2px;
+}
+
+span.badge.new{
+  background-color: #006064;
+}
+
+.city{
+  position: relative;
+  top:10px;
+  color: #888;
+  text-align: justify;
+}
+
+.description{
+  color:#666;
+}
+.maps{
+  padding-right:3px;
+}
+
+.date{
+  font-size: 12px;
+  position: relative;
+  left: 42px;
+  bottom: 6px;
+  color: #616161;
+}
+
+.job-type{
+  font-size: 14px;
+  position: relative;
+  bottom: 27px;
+}
+
+.details-box{
+  background: #fff;
+  padding: 12px 20px !important;
+}
+
+.desc{
+  white-space: pre-line;
+}
+
+.small-text{
+  font-size: 18px;
+}
+
+/* ============================================
+
+============================================== */
