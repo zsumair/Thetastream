@@ -1,3 +1,3 @@
-# JobsStream
-This is a basic project setup for my ambitious app.
+# ThetaStream
+This is a basic project setup for my ambitious app based on meteor.
 **This is an ongoing project**
